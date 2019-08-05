@@ -29,5 +29,5 @@ install:
 script:
   - pip install coveralls
   - python -m mypy alerta/
-  - coverage run --source=alerta nosetests --verbosity=3 tests/*
+  - nosetests --verbosity=3 --cover-package=alerta --with-coverage  tests/*
   - coveralls
