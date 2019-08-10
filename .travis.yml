@@ -29,4 +29,4 @@ install:
 script:
   - python -m mypy alerta/
   - pre-commit run -a
-  - nosetests --verbosity=3 tests/*
+  - pytest --cov=alerta
