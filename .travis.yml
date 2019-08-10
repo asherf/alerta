@@ -30,4 +30,4 @@ install:
 
 script:
   - python -m mypy alerta/
-  - nosetests --verbosity=3 tests/*
+  - pytest
